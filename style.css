@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 .header__content {
-  height: 83px;
+  /* height: 83px; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -63,7 +63,7 @@ body {
   border-radius: 2px;
 }
 .button-text {
-  font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+  font-family: Nunito Sans, sans-serif;
   font-style: italic;
   text-align: center;
   font-size: 11px;
@@ -73,10 +73,11 @@ body {
 }
 .main-screen {
   position: relative;
-  height: 707px;
+  /* height: 707px; */
   background-image: url(img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 208px;
 }
 .main-screen:after {
   content: "";
@@ -96,6 +97,8 @@ body {
 }
 .title {
   font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -116,7 +119,7 @@ body {
 .calculate-btn {
   width: 207px;
   height: 51px;
-  margin-right: 17px;
+  margin-right: 16px;
   border-radius: 2px;
 }
 .app-submit-btn {
@@ -129,34 +132,201 @@ body {
   cursor: pointer;
 }
 .projects {
-  height: 1074px;
+  /* height: 1074px; */
   background-color: #131313;
   font-family: Nunito Sans, Arial, Helvetica, sans-serif;
 }
 .projects-wrapper {
   display: flex;
+  padding-top: 104px;
+  padding-left: 134px;
+  padding-bottom: 416px;
+}
+.projects__card {
+  margin-right: 50px;
 }
 .projects__title {
+  padding-top: 69px;
+  margin-bottom: 24px;
   font-size: 27px;
   line-height: 37px;
   letter-spacing: -0.07em;
   color: #e3b873;
 }
 .projects__subtitle {
+  margin-bottom: 8px;
   font-size: 18px;
   line-height: 25px;
   color: #e3b873;
 }
+.projects__specs {
+  display: grid;
+  grid-template-columns: repeat(2, 191px);
+  grid-template-rows: repeat(2, 106px);
+  margin-bottom: 32px;
+}
+/* исправить */
 h3 ~ span {
   font-size: 13px;
   line-height: 21px;
   color: #ffffff;
 }
 .projects__description {
+  margin-bottom: 49px;
   font-size: 14px;
   line-height: 27px;
   color: #ffffff;
 }
 .design-list {
   display: flex;
+  justify-content: flex-start;
+  margin-bottom: 46px;
+}
+.design-list__item {
+  margin-right: 49px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+.design-list__item--active {
+  color: #e3b873;
+  border-bottom: 1px solid #e3b873;
+}
+.projects__img {
+  filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+  margin-top: 3px;
+  margin-left: 6px;
+}
+/* исправить */
+.projects__pagination img:nth-child(1) {
+  margin-right: 25px;
+}
+.projects__pagination img:nth-child(2) {
+  margin-right: 13px;
+}
+.projects__pagination img:nth-child(3) {
+  margin-right: 13px;
+}
+.projects__pagination img:nth-child(4) {
+  margin-right: 25px;
+}
+
+/* УБРАТЬ height */
+.control {
+  margin-bottom: 148px;
+}
+.control-wrapper {
+  margin-top: -331px;
+  padding-left: 312px;
+}
+.control-content {
+  width: 817px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.control-art {
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
+}
+.control-art > img:nth-child(1) {
+  margin-right: 9px;
+}
+.control-art > img:nth-child(2) {
+  margin-right: 7px;
+}
+.control__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.control__video {
+  margin-bottom: 62px;
+}
+.control-art-line {
+  margin-bottom: 27px;
+}
+.control__description {
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+  color: #363636;
+  margin-bottom: 81px;
+}
+.control__form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 23px;
+}
+.label-name-wrapper {
+  display: inline-block;
+  margin-right: 113px;
+}
+.label-phone-wrapper {
+  display: inline-block;
+  margin-right: 107px;
+}
+.label-name {
+  display: block;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
+}
+.input-name {
+  font-size: 14px;
+  line-height: 23px;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+.input-name::placeholder {
+  color: #363636;
+}
+.label-phone {
+  display: block;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
+}
+.input-phone {
+  font-size: 14px;
+  line-height: 23px;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+.input-phone::placeholder {
+  color: #363636;
+}
+
+.control__button {
+  padding-top: 7px;
+  padding-left: 10px;
+  width: 200px;
+  height: 51px;
+  border-radius: 2px;
+}
+.control-button__text {
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.control-agree {
+  padding-left: 263px;
+  display: block;
+}
+
+.repair__title {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
 }

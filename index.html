@@ -76,25 +76,48 @@
     <section class="projects">
       <div class="container projects-wrapper">
         <div class="projects__card">
-          <h2 class="title projects__title">Completed projects</h2>
+          <h2 class="title projects__title">
+            Completed <br />
+            projects
+          </h2>
           <p class="projects__description">
             Only a small part of the work performed by our company is presented
             <br />
             on the site. For 14 years on in the construction <br />
             market we have made happy more than 1000 families
           </p>
-          <h3 class="title projects__subtitle">City:</h3>
-          <span
-            >Rostov-on-Don <br />
-            LCD admiral</span
-          >
-          <h3 class="title projects__subtitle">apartment area:</h3>
-          <span>81 m2</span>
-          <h3 class="title projects__subtitle">Repair time:</h3>
-          <span>3.5 months</span>
-          <h3 class="title projects__subtitle">Repair Cost:</h3>
-          <span>Upon request</span>
+          <div class="projects__specs">
+            <div class="project__specs-item">
+              <h3 class="title projects__subtitle">City:</h3>
+              <span
+                >Rostov-on-Don <br />
+                LCD admiral</span
+              >
+            </div>
+
+            <div class="project__specs-item">
+              <h3 class="title projects__subtitle">apartment area:</h3>
+              <span>81 m2</span>
+            </div>
+            <div class="project__specs-item">
+              <h3 class="title projects__subtitle">Repair time:</h3>
+              <span>3.5 months</span>
+            </div>
+            <div class="project__specs-item">
+              <h3 class="title projects__subtitle">Repair Cost:</h3>
+              <span>Upon request</span>
+            </div>
+          </div>
+          <!-- исправить -->
+          <div class="projects__pagination">
+            <img src="img/svg/projects-arrow-left.svg" alt="" />
+            <img src="img/svg/project-swipe-point--active.svg" alt="" />
+            <img src="img/svg/project-swipe-point.svg" alt="" />
+            <img src="img/svg/project-swipe-point.svg" alt="" />
+            <img src="img/svg/projects-arrow-right.svg" alt="" />
+          </div>
         </div>
+
         <div class="projects__tabs">
           <ul class="design-list">
             <li>
@@ -116,17 +139,81 @@
             alt="фото проекта"
             width="679"
             height="482"
+            class="projects__img"
           />
         </div>
       </div>
     </section>
 
     <section class="control">
-      <div class="container"></div>
+      <div class="container control-wrapper">
+        <div class="control-content">
+          <h2 class="title control__title">online control</h2>
+          <div class="control-art">
+            <img src="img/svg/control-art-line.svg" alt="" />
+            <img src="img/svg/control-camera.svg" alt="" />
+            <img src="img/svg/control-art-line.svg" alt="" />
+          </div>
+
+          <iframe
+            class="control__video"
+            width="817"
+            height="434"
+            src="https://www.youtube.com/embed/Mhztj4QFCTo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <img
+            class="control-art-line"
+            src="img/svg/control-art-line-long.svg"
+            alt=""
+          />
+          <p class="control__description">
+            At each facility, a camera is installed that broadcasts the progress
+            of work on the <br />
+            clock. At any time, you can go to our website and monitor the
+            progress of work in <br />
+            your apartment. You can watch the live broadcast from one of our
+            facilities! <br />
+            Leave a request below and you will receive a link to the broadcast.
+          </p>
+        </div>
+        <form action="" class="control__form">
+          <div class="label-name-wrapper">
+            <label class="label-name"> Name </label>
+            <input
+              class="input-name"
+              type="text"
+              placeholder="What is your name:"
+            />
+          </div>
+
+          <div class="label-phone-wrapper">
+            <label class="label-phone"> Phone </label>
+            <input
+              class="input-phone"
+              type="text"
+              placeholder="Your phone number:"
+            />
+          </div>
+
+          <button class="button control__button">
+            <span class="control-button__text">SUBMIT</span>
+          </button>
+          <label class="control-agree"
+            ><input type="checkbox" />I agree to the processing of personal
+            data</label
+          >
+        </form>
+      </div>
     </section>
 
     <section class="repair-types">
-      <div class="container"></div>
+      <div class="container">
+        <h2 class="title repair__title">TYPES OF REPAIR</h2>
+      </div>
     </section>
 
     <section class="measure">
