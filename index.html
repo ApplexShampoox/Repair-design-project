@@ -108,13 +108,15 @@
               <span>Upon request</span>
             </div>
           </div>
-          <!-- исправить -->
           <div class="projects__pagination">
-            <img src="img/svg/projects-arrow-left.svg" alt="" />
-            <img src="img/svg/project-swipe-point--active.svg" alt="" />
-            <img src="img/svg/project-swipe-point.svg" alt="" />
-            <img src="img/svg/project-swipe-point.svg" alt="" />
-            <img src="img/svg/projects-arrow-right.svg" alt="" />
+            <img src="img/svg/projects-arrow-left.svg" alt="Стрелка влево" />
+            <img
+              src="img/svg/project-swipe-point--active.svg"
+              alt="Активная точка"
+            />
+            <img src="img/svg/project-swipe-point.svg" alt="точка" />
+            <img src="img/svg/project-swipe-point.svg" alt="точка" />
+            <img src="img/svg/projects-arrow-right.svg" alt="Стрелка вправо" />
           </div>
         </div>
 
@@ -150,25 +152,28 @@
         <div class="control-content">
           <h2 class="title control__title">online control</h2>
           <div class="control-art">
-            <img src="img/svg/control-art-line.svg" alt="" />
-            <img src="img/svg/control-camera.svg" alt="" />
-            <img src="img/svg/control-art-line.svg" alt="" />
+            <img src="img/svg/control-art-line.svg" alt="линия" />
+            <img src="img/svg/control-camera.svg" alt="фотоаппарат" />
+            <img src="img/svg/control-art-line.svg" alt="линия" />
           </div>
 
-          <iframe
-            class="control__video"
-            width="817"
-            height="434"
-            src="https://www.youtube.com/embed/Mhztj4QFCTo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="video__wrapper">
+            <iframe
+              width="817"
+              height="434"
+              class="control__video"
+              src="https://www.youtube.com/embed/Mhztj4QFCTo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
           <img
             class="control-art-line"
             src="img/svg/control-art-line-long.svg"
-            alt=""
+            alt="линия"
           />
           <p class="control__description">
             At each facility, a camera is installed that broadcasts the progress
@@ -180,6 +185,7 @@
             Leave a request below and you will receive a link to the broadcast.
           </p>
         </div>
+
         <form action="" class="control__form">
           <div class="label-name-wrapper">
             <label class="label-name"> Name </label>
@@ -202,42 +208,427 @@
           <button class="button control__button">
             <span class="control-button__text">SUBMIT</span>
           </button>
-          <label class="control-agree"
-            ><input type="checkbox" />I agree to the processing of personal
-            data</label
-          >
+
+          <div class="control__agree">
+            <label class="control__label">
+              <input type="checkbox" class="control__checkbox" />
+              <span class="control__box"></span>
+              I agree to the processing of personal data
+            </label>
+          </div>
         </form>
       </div>
     </section>
 
     <section class="repair-types">
-      <div class="container">
+      <div class="container repair-container">
         <h2 class="title repair__title">TYPES OF REPAIR</h2>
+        <div class="repair-art">
+          <img src="img/svg/control-art-line.svg" alt="линия" />
+          <img src="img/svg/repair-tools.svg" alt="инструменты" />
+          <img src="img/svg/control-art-line.svg" alt="линия" />
+        </div>
+        <div class="repair-wrapper">
+          <div class="repair-card-01 repair-card">
+            <div class="repair-card__text">
+              <h3>Redecorating</h3>
+              <ul class="repair-card__list">
+                <li class="repair-card__item">Dismantling of old coatings</li>
+                <li class="repair-card__item">Wallpapering</li>
+                <li class="repair-card__item">Painting walls and ceilings</li>
+                <li class="repair-card__item">Laying flooring</li>
+                <li class="repair-card__item">Replacing plumbing</li>
+                <li class="repair-card__item">
+                  Replacing sockets and switches
+                </li>
+                <li class="repair-card__item">Replacing doors</li>
+              </ul>
+              <button class="repair__price">
+                <span class="repair__price-text">from 900 rub / m2</span>
+              </button>
+            </div>
+          </div>
+          <div class="repair-card-02 repair-card">
+            <div class="repair-card__text">
+              <h3>Overhaul</h3>
+              <ul class="repair-card__list">
+                <li class="repair-card__item">Dismantling of old coatings</li>
+                <li class="repair-card__item">Wallpapering</li>
+                <li class="repair-card__item">Painting walls and ceilings</li>
+                <li class="repair-card__item">Laying flooring</li>
+                <li class="repair-card__item">Replacing plumbing</li>
+                <li class="repair-card__item">
+                  Replacing sockets and switches
+                </li>
+                <li class="repair-card__item">Replacing doors</li>
+              </ul>
+              <button class="repair__price">
+                <span class="repair__price-text">from 1800 rub / m2</span>
+              </button>
+            </div>
+          </div>
+          <div class="repair-card-03 repair-card">
+            <div class="repair-card__text">
+              <h3>Designer Repair</h3>
+              <ul class="repair-card__list">
+                <li class="repair-card__item">Dismantling of old coatings</li>
+                <li class="repair-card__item">Wallpapering</li>
+                <li class="repair-card__item">Painting walls and ceilings</li>
+                <li class="repair-card__item">Laying flooring</li>
+                <li class="repair-card__item">Replacing plumbing</li>
+                <li class="repair-card__item">
+                  Replacing sockets and switches
+                </li>
+                <li class="repair-card__item">Replacing doors</li>
+              </ul>
+              <button class="repair__price">
+                <span class="repair__price-text">from 4000 rub / m2</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="measure">
-      <div class="container"></div>
+      <div class="container measure__wrapper">
+        <div class="measure__card-1">
+          <ol class="measure__list">
+            <li class="measure__list-text-1">
+              Our specialist will arrive for measurements per day <br />
+              contact, or appoint a date convenient for you
+            </li>
+            <li class="measure__list-text-2">Free metering</li>
+            <li class="measure__list-text-3">Free consultation</li>
+            <li class="measure__list-text-4">
+              Get a cost estimate and <br />
+              the timing of your future repairs
+            </li>
+          </ol>
+        </div>
+        <div class="measure__card-2">
+          <div class="measure__card-2-wrapper">
+            <form action="" class="measure__form">
+              <div class="measure__form-title">
+                <span class="measure__form-text"
+                  >Leave a request for free <br />
+                  departure of the measurer</span
+                >
+              </div>
+
+              <div class="label-name-wrapper-dark">
+                <label class="label-name-dark"> Name </label>
+                <input
+                  class="input-name-dark"
+                  type="text"
+                  placeholder="What is your name:"
+                />
+              </div>
+
+              <div class="label-phone-wrapper-dark">
+                <label class="label-phone-dark"> Phone </label>
+                <input
+                  class="input-phone-dark"
+                  type="text"
+                  placeholder="Your phone number:"
+                />
+              </div>
+
+              <div class="label-email-wrapper">
+                <label class="label-email"> Email </label>
+                <input
+                  class="input-email"
+                  type="text"
+                  placeholder="Your email:"
+                />
+              </div>
+              <div class="measure__agree">
+                <label class="control__label">
+                  <input type="checkbox" class="control__checkbox" />
+                  <span class="control__box"></span>
+                  I agree to the processing of personal data
+                </label>
+              </div>
+
+              <button class="button control__button measure__button">
+                <span class="control-button__text">Call the measurer</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="measure__save">
+            <img
+              src="img/svg/piggy-bank.svg"
+              class="measure__save-img"
+              alt="свинья-копилка"
+            />
+            <span class="measure__save-text"
+              >Help save 10 - 20% of the <br />
+              cost of materials</span
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="style">
-      <div class="container"></div>
+      <div class="container style__wrapper">
+        <div class="style__card-1">
+          <h2 class="style__title">
+            We realize your<br />
+            wildest fantasies
+          </h2>
+          <ul class="style__type-list">
+            <li class="style__type-list-item style__type-list-item--active">
+              American classic
+            </li>
+            <li class="style__type-list-item">Empire</li>
+            <li class="style__type-list-item">Classical</li>
+            <li class="style__type-list-item">Loft</li>
+            <li class="style__type-list-item">Minimalism</li>
+            <li class="style__type-list-item">Provence</li>
+            <li class="style__type-list-item">Romanticism</li>
+            <li class="style__type-list-item">Scandinavian style</li>
+            <li class="style__type-list-item">Mediterranean style</li>
+            <li class="style__type-list-item">High tech</li>
+            <li class="style__type-list-item">Eclecticism</li>
+          </ul>
+        </div>
+        <div class="style__card-2">
+          <img src="img/style-1.png" alt="Образец" class="style__img-1" />
+          <img src="img/style-2.png" alt="Образец" class="style__img-2" />
+          <img src="img/style-3.png" alt="Образец" class="style__img-3" />
+          <img src="img/style-4.png" alt="Образец" class="style__img-4" />
+          <div class="style__nav">
+            <img
+              src="img/totheleft.png"
+              alt="Стрелка влево"
+              class="style__left"
+            />
+            <img
+              src="img/totheright.png"
+              alt="Стрелка вправо"
+              class="style__right"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="clients">
-      <div class="container"></div>
+      <div class="container clients__wrapper">
+        <h2 class="clients__title">our clients</h2>
+        <div class="clients__art">
+          <img src="img/svg/control-art-line.svg" alt="линия" />
+          <img src="img/svg/handshake.svg" alt="рукопожатие" />
+          <img src="img/svg/control-art-line.svg" alt="линия" />
+        </div>
+        <span class="clients__recommendation"
+          >80% of our customers recommend us to their<br />
+          friends and family.</span
+        >
+        <div class="clients__cards-wrapper">
+          <div class="clients__card">
+            <div class="clients__head">
+              <img
+                src="img/client-1.png"
+                alt="фото клиента"
+                class="clients__img"
+                width="76px"
+                height="76px"
+              />
+              <h3 class="clients__name">
+                Fedosova Maria<br />
+                Konstantinovna
+              </h3>
+            </div>
+
+            <p class="clients__review">
+              I want to thank the guys for their work. We put your shower part
+              in repair. I am very grateful that I referred to the repair as to
+              my own. Great thanks I express the project to Georgia for its
+              professionalism and approach.
+            </p>
+            <p class="clients__review">
+              The repair process was turned out in terms, faster than
+              anticipated. Team mobile and professional. Works performed
+              qualitatively without comments. Quality satisfied. Prices
+              democratic. I recommend these masters.
+            </p>
+            <img
+              src="img/clients-review-01.png"
+              alt="обзор"
+              class="clients__specs"
+            />
+          </div>
+          <div class="clients__card">
+            <div class="clients__head">
+              <img
+                src="img/client-2.png"
+                alt="фото клиента"
+                class="clients__img"
+                width="76px"
+                height="76px"
+              />
+              <h3 class="clients__name">
+                Afanasyev Sergey<br />
+                Alexandrovich
+              </h3>
+            </div>
+
+            <p class="clients__review">
+              I want to thank the guys for their work. We put your shower part
+              in repair. I am very grateful that I referred to the repair as to
+              my own. Great thanks I express the project to Georgia for its
+              professionalism and approach.
+            </p>
+            <p class="clients__review">
+              The repair process was turned out in terms, faster than
+              anticipated. Team mobile and professional. Works performed
+              qualitatively without comments. Quality satisfied. Prices
+              democratic. I recommend these masters.
+            </p>
+            <img
+              src="img/clients-review-02.png"
+              alt="обзор"
+              class="clients__specs"
+            />
+          </div>
+          <div class="clients__card">
+            <div class="clients__head">
+              <img
+                src="img/client-3.png"
+                alt="фото клиента"
+                class="clients__img"
+                width="76px"
+                height="76px"
+              />
+              <h3 class="clients__name">
+                Kiriev Egor<br />
+                Leonidovich
+              </h3>
+            </div>
+
+            <p class="clients__review">
+              I want to thank the guys for their work. We put your shower part
+              in repair. I am very grateful that I referred to the repair as to
+              my own. Great thanks I express the project to Georgia for its
+              professionalism and approach.
+            </p>
+            <p class="clients__review">
+              The repair process was turned out in terms, faster than
+              anticipated. Team mobile and professional. Works performed
+              qualitatively without comments. Quality satisfied. Prices
+              democratic. I recommend these masters.
+            </p>
+            <img
+              src="img/clients-review-03.png"
+              alt="обзор"
+              class="clients__specs"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="help">
-      <div class="container"></div>
-    </section>
+      <div class="container help__wrapper">
+        <form action="" class="help__form">
+          <span class="help__form-text">Have any questions?</span>
 
-    <section class="map">
-      <div class="container"></div>
+          <div class="help__form-data-wrapper">
+            <div class="help__form-wrapper">
+              <label class="label-name-dark"> Name </label>
+              <input
+                class="input-name-dark"
+                type="text"
+                placeholder="What is your name:"
+              />
+            </div>
+
+            <div class="help__form-wrapper">
+              <label class="label-phone-dark"> Phone </label>
+              <input
+                class="input-phone-dark"
+                type="text"
+                placeholder="Your phone number:"
+              />
+            </div>
+          </div>
+          <div class="help__question-wrapper">
+            <label class="label-phone-dark"> Question </label>
+            <input
+              class="input-phone-dark help__question-input"
+              type="text"
+              placeholder="I want to know:"
+            />
+          </div>
+          <div class="measure__agree help__agree">
+            <label class="control__label">
+              <input type="checkbox" class="control__checkbox" />
+              <span class="control__box"></span>
+              I agree to the processing of personal data
+            </label>
+          </div>
+
+          <button class="button control__button help__button">
+            <span class="control-button__text">SUBMIT</span>
+          </button>
+        </form>
+
+        <span class="help__adress"
+          >Rostov-on-Don, Nansen St., 239 Shopping Center<br />
+          Decorum Tel +7 (928) 768 32 29</span
+        >
+        <div class="help__connect">
+          <img src="img/svg/mail.svg" alt="письмо" class="help__mail" />
+          <img src="img/svg/instagram.svg" alt="инстаграм" class="help__ig" />
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.584888608706!2d39.7220848253971!3d47.24426513318181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47adab683%3A0xc1e6a0b74b2f30ab!2z0YPQuy4g0J3QsNC90YHQtdC90LAsIDIzOSwg0KDQvtGB0YLQvtCyLdC90LAt0JTQvtC90YMsINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4sIDM0NDAzOA!5e0!3m2!1sru!2sru!4v1635374763762!5m2!1sru!2sru"
+          width="925"
+          height="465"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="help__google-map"
+        ></iframe>
+      </div>
     </section>
 
     <footer class="footer">
-      <div class="container"></div>
+      <div class="header__content container footer__wrapper">
+        <a href="#" class="header__logo">IC "Repair Design Project"</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list-element">
+              <a href="#" class="header__list-element-link">HOME</a>
+            </li>
+            <li class="header__list-element">
+              <a href="#" class="header__list-element-link">PROJECTS</a>
+            </li>
+            <li class="header__list-element">
+              <a href="#" class="header__list-element-link">MEASUREMENT</a>
+            </li>
+            <li class="header__list-element">
+              <a href="#" class="header__list-element-link">TEAM</a>
+            </li>
+            <li class="header__list-element">
+              <a href="#" class="header__list-element-link">REVIEWS</a>
+            </li>
+            <li class="header__list-element">
+              <a href="#" class="header__list-element-link">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="+7 (928) 768-32-39" class="header__phone"
+          >+7 (928) 768-32-39</a
+        >
+        <button class="header__button button">
+          <span class="button-text">Request a call</span>
+        </button>
+      </div>
     </footer>
   </body>
 </html>
