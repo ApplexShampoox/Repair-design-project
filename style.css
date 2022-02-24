@@ -53,7 +53,7 @@ body {
 .button {
   cursor: pointer;
   background: #e3b873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
   border: none;
 }
 .header__button {
@@ -100,7 +100,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-.main-screen__card h1 {
+h1 {
   font-size: 40px;
   line-height: 53px;
   margin-bottom: 18px;
@@ -193,7 +193,7 @@ h3 ~ span {
   border-bottom: 1px solid #e3b873;
 }
 .projects__img {
-  filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 50px 30px rgba(0, 0, 0, 0.15));
   margin-top: 3px;
   margin-left: 6px;
 }
@@ -436,7 +436,7 @@ h3 ~ span {
 .measure {
   background-image: url(img/background-building.png);
   background-repeat: no-repeat;
-  background-position: -72px 0px;
+  background-position: -72px 0;
 }
 .measure__wrapper {
   display: flex;
@@ -533,7 +533,7 @@ h3 ~ span {
   padding: 28px 49px 27px 49px;
   width: 506px;
   background: #131313;
-  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
   color: #fff;
   margin-bottom: 28px;
 }
@@ -619,7 +619,7 @@ h3 ~ span {
 .measure__button {
   width: 213px;
   align-self: flex-end;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .measure__save {
   display: grid;
@@ -632,7 +632,7 @@ h3 ~ span {
   font-size: 18px;
   line-height: 26px;
   color: #e3b873;
-  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  text-shadow: 0 3px 10px rgba(227, 184, 115, 0.15);
   padding-left: 58px;
   padding-top: 22px;
 }
@@ -753,7 +753,7 @@ h3 ~ span {
 }
 .clients__card {
   width: 376px;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.04);
   padding: 24px 32px 90px 20px;
 }
 .clients__card {
@@ -830,7 +830,7 @@ h3 ~ span {
   padding: 34px 181px 34px 200px;
   width: 883px;
   background: #131313;
-  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
   color: #fff;
   margin-bottom: 49px;
 }
@@ -861,7 +861,7 @@ h3 ~ span {
 }
 .help__button {
   width: 200px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .help__adress {
   font-family: Yeseva One;
@@ -902,7 +902,7 @@ h3 ~ span {
   .main-screen {
     padding-bottom: 0;
   }
-  .main-screen__card h1 {
+  h1 {
     font-size: 23px;
     line-height: 31px;
   }
