@@ -197,7 +197,7 @@ h3 ~ span {
   margin-top: 3px;
   margin-left: 6px;
 }
-/* исправить */
+
 .projects__pagination img:nth-child(1) {
   margin-right: 25px;
 }
@@ -211,12 +211,17 @@ h3 ~ span {
   margin-right: 25px;
 }
 
+.projects__left {
+  display: none;
+}
+.projects__right {
+  display: none;
+}
 .control {
   margin-bottom: 142px;
 }
 .control-wrapper {
   margin-top: -327px;
-  /* padding-left: 312px; */
 }
 .control-content {
   display: flex;
@@ -950,6 +955,20 @@ h3 ~ span {
   }
   .projects__pagination {
     display: none;
+  }
+  .projects__nav {
+    display: flex;
+    position: relative;
+    bottom: 235px;
+    z-index: 99;
+  }
+
+  .projects__left {
+    display: unset;
+    margin-right: 270px;
+  }
+  .projects__right {
+    display: unset;
   }
   .design-list {
     display: none;
