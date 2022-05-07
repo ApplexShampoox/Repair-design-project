@@ -4,6 +4,9 @@ body * {
 body {
   font-family: Nunito Sans, Arial, Helvetica, sans-serif;
 }
+button {
+  cursor: pointer;
+}
 .header {
   font-size: 11px;
   line-height: 15px;
